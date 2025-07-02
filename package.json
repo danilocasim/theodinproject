@@ -6,35 +6,33 @@
     "lint": "standard app/javascript --verbose",
     "stylelint": "stylelint 'app/assets/stylesheets/custom_styles/*.css'",
     "build": "node esbuild.config.mjs",
-    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --postcss"
+    "build:css": "npx @tailwindcss/cli -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --postcss"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/turbo-rails": "^8.0.5",
-    "@rails/request.js": "^0.0.11",
-    "@sentry/esbuild-plugin": "^2.22.7",
+    "@hotwired/turbo-rails": "^8.0.13",
+    "@rails/request.js": "^0.0.12",
+    "@sentry/esbuild-plugin": "^3.5.0",
     "@stimulus/polyfills": "^2.0.0",
-    "@tailwindcss/forms": "^0.5.9",
-    "@tailwindcss/typography": "^0.5.15",
-    "autoprefixer": "^10.4.20",
-    "browserslist": "^4.23.3",
-    "chart.js": "^4.4.4",
+    "@tailwindcss/cli": "^4.0.8",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "browserslist": "^4.25.0",
+    "chart.js": "^4.4.9",
     "chartjs-plugin-crosshair": "^2.0.0",
-    "chartjs-plugin-tailwindcss-colors": "^0.2.4",
-    "chokidar": "^3.6.0",
+    "chokidar": "^4.0.3",
     "debounce": "^2.2.0",
     "el-transition": "^0.0.7",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.25.5",
     "esbuild-plugin-prismjs": "^1.0.8",
     "esbuild-rails": "^1.0.7",
     "flatpickr": "^4.6.13",
-    "mermaid": "^11.4.1",
-    "postcss": "^8.4.49",
-    "postcss-import": "^16.1.0",
-    "prismjs": "^1.29.0",
+    "mermaid": "^11.6.0",
+    "postcss": "^8.5.6",
+    "prismjs": "^1.30.0",
     "sortablejs": "^1.15.6",
-    "stimulus-use": "^0.52.2",
-    "tailwindcss": "^3.4.13",
+    "stimulus-use": "^0.52.3",
+    "tailwindcss": "4.1.7",
     "tippy.js": "^6.3.7"
   },
   "browserslist": [
@@ -42,8 +40,8 @@
   ],
   "devDependencies": {
     "standard": "^17.1.2",
-    "stylelint": "^16.13.0",
-    "stylelint-config-standard": "^36.0.1"
+    "stylelint": "^16.21.0",
+    "stylelint-config-standard": "^38.0.0"
   },
   "packageManager": "yarn@4.4.0"
 }
